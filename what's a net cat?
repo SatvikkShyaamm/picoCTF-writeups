@@ -1,0 +1,8 @@
+PROBLEM STATEMENT:
+Using netcat (nc) is going to be pretty important. Can you connect to jupiter.challenges.picoctf.org at port 41120 to get the flag?
+
+HINT:
+nc tutorial
+
+APPROACH:
+using command 'nc', frame the command as 'nc jupiter.challenges.picoctf.org 41120'.This will enable a connection to the server and the flag is given from the server.
