@@ -1,0 +1,50 @@
+PROBLEM STATEMENT:
+Download this image and find the flag.
+
+HINT:
+We know the end sequence of the message will be $t3g0.
+
+APPROACH:
+This problem is based on the pixels of the image.
+
+PROGRAM USED:
+from PIL import Image
+
+def extract_lsb_message(path,terminator= b'$t3g0'):
+    img = Image.open(path)
+    bits = []
+    for r,g,b,*_ in img.getdata():        # unpack RGBA but only use R,G,B
+        bits.append(r & 1)
+        bits.append(g & 1)
+        bits.append(b & 1)
+
+    # pack bits into bytes (MSB-first inside each byte)
+    bytes_out = bytearray()
+    for i in range(0, len(bits), 8):
+        chunk = bits[i:i+8]
+        if len(chunk) < 8:
+            break
+        byte = 0
+        for bit in chunk:
+            byte = (byte << 1) | bit
+        bytes_out.append(byte)
+
+    # find terminator and return message up to it
+    idx = bytes_out.find(terminator)
+    if idx != -1:
+        return bytes_out[:idx].decode('utf-8', errors='replace')
+    else:
+        return bytes_out.decode('utf-8', errors='replace')
+
+print(extract_lsb_message('pico.flag.png'))
+
+APPROACH:
+first we import image module from pil.
+function takes the arguements (path of the file and terminator).
+image data is taken in a variable.
+for every pixel R,G and B have decimal values which is converted to its binary format and LSB is calculated using Bitwise AND operation.
+for every pixel we get a group of 3 values which will be appended into the bits array.
+after all pixels are resolved into LSB and added into bits array, the bits are chunked into bytes.
+now each byte of 8 bits(in byte array) on translating to ASCII characters will result in a sequence of characters.
+when the porgram finds the given terminator, it will stop and extract all the content before terminator
+if no terminator found then it will extract all the data from the byte array.
