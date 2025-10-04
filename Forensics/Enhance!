@@ -1,0 +1,11 @@
+PROBLEM STATEMENT:
+Download this image file and find the flag.
+
+HINT:
+No hints
+
+Approach:
+the given file is .svg file
+the hidden data is not embedded within the file and this is not a direct website and hence this problem doesnt
+come under steg or web instead comes under forensics because of the above reason.
+opening the given .svg file in browser and inspecting it deeply gives the flag.
