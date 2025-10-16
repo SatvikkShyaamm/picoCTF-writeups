@@ -1,0 +1,12 @@
+PROBLEM STATEMENT:
+Know of little and big endian?
+
+HINTS:
+You might want to check the ASCII table to first find the hexadecimal representation of characters before finding the endianness.
+Read more about how endianness
+
+PROBLEM APPROACH:
+enable connection with using nc and given remote server.
+it askes for little endian representation of a word
+if the given input correct then it asks for big endian representation of the word.
+if correct the flag is provided.
