@@ -1,0 +1,10 @@
+PROBLEM STATEMENT:
+a postgreSQL server given and was asked to connect to it through terminal
+
+HINTS:
+nothing
+
+APPROACH:
+a server and password to enter the server was given.
+\dt or information_schema.tables will give us the list of tables available in the database.
+select * from flags will give us the flag.
