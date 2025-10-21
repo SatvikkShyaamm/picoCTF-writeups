@@ -1,0 +1,12 @@
+PROBLLEM STATEMENT:
+Our server seems to be leaking pieces of a secret flag in its logs. The parts are scattered and sometimes repeated. Can you reconstruct the original flag? Download the logs and figure out the full flag from the fragments.
+
+HINTS:
+You can use grep to filter only matching lines from the log.
+Some lines are duplicates; ignore extra occurrences.
+
+APPROACH:
+using cat command check the log file.
+since we have n number of logs we will be using grep command.
+cat and grep command will let us display the content in file according to the pattern we are looking for.
+example : cat log.txt | grep "picoCTF{" -> this will be giving the first part of the flag and changing the pattern will give us other parts of flags.
