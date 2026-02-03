@@ -1,0 +1,14 @@
+PROBLEM STATEMENT:
+Hi, intrepid investigator! 📄🔍 You've stumbled upon a peculiar PDF filled with what seems like nothing more than garbled nonsense. 
+But beware! Not everything is as it appears. 
+Amidst the chaos lies a hidden treasure—an elusive flag waiting to be uncovered.
+
+HINTS:
+1. Don't be fooled by the visible text; it’s just a decoy!
+2. Look beyond the surface for hidden clues
+
+PROBLEM APPROACH:
+1. Confidential.pdf is provided.
+2. Hints tell us that flag is hidden in the metadata
+3. using the "exiftool" we can find that the author name is encoded in base64
+4. Decoding the base64 encoded message gives us the flag.
