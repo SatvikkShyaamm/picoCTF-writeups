@@ -1,0 +1,15 @@
+PROBLEM STATEMENT:
+The SOC team discovered a suspiciously large log file after a recent breach. 
+When they opened it, they found an enormous block of encoded text instead of typical logs. 
+Could there be something hidden within? Your mission is to inspect the resulting file and reveal the real purpose of it. 
+The team is relying on your skills to uncover any concealed information within this unusual log.
+
+HINTS:
+1. Use base64 to decode the data and generate the image file.
+
+APPROACH:
+1. Download the .txt file 
+2. cat command lets you open the text file in the terminal
+3. the whole text file is encoded in base64 and its too large
+4. using the built in base64 tool decode the whole file -> gives an image as output
+5. the hex code found in the image is the flag.
