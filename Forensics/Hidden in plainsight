@@ -1,0 +1,13 @@
+PROBLEM STATMENT:
+You’re given a seemingly ordinary JPG image. 
+Something is tucked away out of sight inside the file. 
+Your task is to discover the hidden payload and extract the flag.
+
+HINTS:
+1. Download the jpg image and read its metadata
+
+APPROACH:
+1. Download the given file
+2. using exiftool find the base64 encoded comment.
+3. decoding the comment we get to know the password for steghide
+4. using the command steghide extract -sf <file_name> -p <password>, extracted data is written to a text file and flag found.
