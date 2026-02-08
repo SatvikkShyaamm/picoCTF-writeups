@@ -1,0 +1,15 @@
+PROBLEM STATEMENT:
+This file seems broken... or is it? 
+Maybe a couple of bytes could make all the difference. Can you figure out how to bring it back to life?
+
+HINTS:
+1. Try checking the file’s header.
+2. JPEG
+3. Tools like xxd or hexdump can help you inspect and edit file bytes.
+
+APPROACH:
+1. Download the corrupted file
+2. using the command hexdump -C filename | head, i was able to view the first bytes of the file
+3. That showed the file was broken
+4. I replaced the incorrect bytes with the correct bytes and saved the file
+5. Opening the file showed me the flag.
