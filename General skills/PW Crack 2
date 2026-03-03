@@ -1,0 +1,12 @@
+PROBLEM STATEMENT:
+Can you crack the password to get the flag? Download the password checker here and you'll need the encrypted flag in the same directory too.
+
+HINTS:
+1. Does that encoding look familiar?
+2. The str_xor function does not need to be reverse engineered for this challenge.
+
+APPROACH:
+1. Run the given python file in terminal.
+2. Asks for a password.
+3. Decode the hex values given for the password verification.
+4. Give the right password and flag gets displayed.
