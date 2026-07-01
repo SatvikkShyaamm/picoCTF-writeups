@@ -1,1 +1,12 @@
+PROBLEM STATEMENT:
+Can you find the flag in this disk image?
 
+HINT:
+How can you extract the directory from the disk image?
+
+APPROACH:
+I downloaded the ziped folder and extracted the disk.img file from that
+checked the file type
+then created the loop devices inside /dev using a command
+created folders p1 and p3 mounted the corresponding loop devices on them
+searched for the logs using "git log" command which gave the flag.
