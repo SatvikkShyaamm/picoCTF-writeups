@@ -1,0 +1,14 @@
+PROBLEM STATEMENT:
+A message has been encrypted using RSA. 
+The public key is gone… but someone might have been careless with the private key. Can you recover it and decrypt the message?
+
+HINTS:
+Metadata can tell you more than you expect.
+Hex can be turned back into a key file.
+
+APPROACH:
+I am provided with the encrypted flag and an image file which has a key image
+The metadata gave me a long hex string as comment
+I converted into the private key format and verified
+I used this key against the encrypted flag.enc file 
+Got the flag.
