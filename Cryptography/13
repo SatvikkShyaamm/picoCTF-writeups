@@ -1,0 +1,10 @@
+PROBLEM STATEMENT:
+Cryptography can be easy, do you know what ROT13 is?
+
+HINTS:
+This can be solved online if you don't want to do it by hand!
+
+APPROACH:
+The problem statement wil have the ROT13 encoded string 
+Decode it using the ROT13 decoder
+This will give the flag.
