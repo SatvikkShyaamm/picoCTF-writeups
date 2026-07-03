@@ -1,0 +1,9 @@
+PROBLEM STATEMENT:
+The numbers... what do they mean?
+
+HINTS:
+The flag is in the format PICOCTF{}
+
+APPROACH:
+I am given a .png file which contains numbers along with curly braces
+Decoding it will give the exact flag.
