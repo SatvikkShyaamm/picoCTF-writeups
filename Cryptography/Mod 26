@@ -1,0 +1,11 @@
+PROBLEM STATEMENT:
+Cryptography can be easy, do you know what ROT13 is?
+
+HINTS:
+This can be solved online if you don't want to do it by hand!
+
+APPROACH:
+I am given a .txt file
+This file contains a string which is encoded using ROT13
+Decode it using ROT13 
+This gives the flag.
