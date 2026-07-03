@@ -1,0 +1,10 @@
+PROBLEM STATEMENT:
+Can you get the real meaning from this file.
+
+HINTS:
+Engaging in various decoding processes is of utmost importance
+
+APPROACH:
+Download the given flag file
+Engage with Base64 decoding twice and ROT cipher decoding once
+This gives the flag.
