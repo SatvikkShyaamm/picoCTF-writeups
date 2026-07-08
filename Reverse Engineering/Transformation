@@ -9,4 +9,4 @@ APPROACH:
 First download the file given
 copy the contents of that file
 craft the python code to decode the contents encrypted
-this will print the flag
+Run the python code in the terminal and that will print the flag
