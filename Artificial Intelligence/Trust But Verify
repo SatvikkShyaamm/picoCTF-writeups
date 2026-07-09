@@ -1,0 +1,13 @@
+PROBLEM STATEMENT:
+Play through an AI ethics interactive fiction where confident AI outputs can be wrong, subtly wrong, or almost-right. 
+Verify claims, code, and citations to learn practical habits for safe AI-assisted work.
+
+HINTS:
+The game pauses frequently. Press Enter at each continue prompt.
+The flag is printed near the end of the story.
+
+APPROACH:
+After connecting to the game platform
+There is a whole conversation happening between the normal user and his AI assistant
+After every output given by the AI assistant, it asks the user to verify it or use them as given
+User needs to verify every output and at the end of the conversation the flag is given.
