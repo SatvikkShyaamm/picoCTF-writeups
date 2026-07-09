@@ -1,0 +1,15 @@
+PROBLEM STATEMENT:
+Lyrics jump from verses to the refrain kind of like a subroutine call. 
+There's a hidden refrain this program doesn't print by default. Can you get it to print it? There might be something in it for you.
+
+HINTS:
+This program can easily get into undefined states. Don't be shy about Ctrl-C.
+Unsanitized user input is always good, right?
+Is there any syntax that is ripe for subversion?
+
+APPROACH:
+First download the program file given
+Connect to the platform through the terminal
+Give the correct input when an input asked in the terminal after "Crowd: "
+When the correct input is given, automatically the secret_intro verse in the python code prints along with the flag at the end.
+This gives the flag in the terminal
