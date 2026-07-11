@@ -1,0 +1,12 @@
+PROBLEM STATEMENT:
+This file contains more than it seems.
+
+HINTS:
+What is a hex editor?
+
+APPROACH:
+Download the garden.jpg file from the task
+Use exiftool and xxd to analyze it's metadata and the bytes of the image
+Analyse it's header and footer
+Use strings along with grep
+Any of the technqiues will reveal the flag.
