@@ -1,0 +1,9 @@
+PROBLEM STATEMENT:
+This file doesn't look like much... just a bunch of 1s and 0s. But maybe it's not just random noise. Can you recover anything meaningful from this?
+
+APPROACH:
+Given the .bin file which contains 1's and 0's completely, download this file
+Analyze its file type and other properties
+Analyzing the head part of the file, we get to know that it concists of the JPG header
+Transform the bits to bytes and craft a JPG image
+The image contains the flag.
