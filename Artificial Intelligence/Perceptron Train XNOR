@@ -1,0 +1,52 @@
+PROBLEM STATEMENT:
+Watch a perceptron learn in real time on XNOR data using the classic update rule: only misclassified points trigger updates, with no weight decay.
+Because XNOR is not linearly separable, a single perceptron cannot hit 100% accuracy. 
+Reach 75% accuracy to prove you understand the limitation and reveal the flag.
+
+HINTS:
+You get 16 updates per run, and correctly classified points do not change the model in the classic rule.
+The learning-rate sweep is wide (0.02 through 20.0), so very high values can swing the boundary aggressively.
+XNOR cannot be perfectly separated by one line; 75% is the best achievable target for this setup.
+Use the slider to sweep the range and watch how the decision boundary moves between misclassification updates.
+
+APPRAOCH:
+Start
+   │
+   ▼
+Open the challenge webpage
+   │
+   ▼
+Understand the objective
+• Perceptron is trained on XNOR data
+• Classic perceptron update rule
+• Only misclassified points update weights
+   │
+   ▼
+Observe the constraints
+• Maximum 16 updates
+• No weight decay
+• Learning rate can be varied (0.02–20)
+   │
+   ▼
+Recall the key concept
+• XNOR is NOT linearly separable
+• A single-layer perceptron cannot reach 100% accuracy
+• Best achievable accuracy = 75%
+   │
+   ▼
+Experiment with the learning-rate slider
+   │
+   ▼
+Watch the decision boundary move
+• Updates occur only after misclassification
+• Higher learning rates produce larger boundary shifts
+• Lower learning rates produce smaller adjustments
+   │
+   ▼
+Find a learning rate that stabilizes at 75% accuracy
+   │
+   ▼
+Challenge reveals the flag
+   │
+   ▼
+End
